@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  mpv-cron:
+    build: .
+    container_name: mpv-cron
+    restart: unless-stopped
+    volumes:
+      - ./app:/app:ro
+      - ./config:/root/.config/mpv:ro
+      - ./logs:/var/log
