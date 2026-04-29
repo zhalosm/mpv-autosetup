@@ -1,6 +1,6 @@
 #!/bin/bash
 
-STREAM_URL="http://10.0.108.252:8000/stream"
+STREAM_URL=""
 LOG="/tmp/stream_check.log"
 PLAYER_CMD="mpv --no-video --really-quiet $STREAM_URL"
 
